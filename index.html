@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizzeria</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+<body style="background-color:rgb(255, 213, 213);">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-4"></div>
+            <div class="col-sm-4">
+                <br>
+                <br>
+                <h3>Pizza planeta ofrece</h4>
+                    <br>
+                    <menu>
+                        <option>Pizza chica $130</option>
+                        <option>Pizza mediana $160</option>
+                        <option>Pizza grande $185</option>
+                        <option>Pizza familiar $210</option>
+                    </menu>
+                    <br>
+                    <label for="">Selecciona el tamaño de la pizza</label>
+                    <br>
+                    <select name="" id="tamaño">
+                        <option value="chica">Chica</option>
+                        <option value="mediana">Mediana</option>
+                        <option value="grande">Grande</option>
+                        <option value="familiar">Familiar</option>
+                    </select>
+                    <br>
+                    <label for="">Introduce la cantidad de pizzas que deseas</label>
+                    <input type="number" class="form-control" id="pizzasT" style="background-color: rgb(255, 225, 237);">
+                    <br>
+                    <label for="">Total a pagar</label>
+                    <input type="text" class="form-control" id="total" style="background-color: rgb(255, 225, 237);" readonly>
+                    <br>
+                    <button type="button" class="btn btn-dark" onclick="Calcular()"> 
+                        Calcular
+                    </button>
+                    <button type="button" class="btn btn-dark" onclick="limpiar()">
+                        Limpiar
+                    </button>
+            </div>
+        </div>
+    </div>
+    <script src="pizzas.js"></script>
+</body>
